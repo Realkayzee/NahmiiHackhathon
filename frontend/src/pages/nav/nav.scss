@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+.nav-items {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: #ffff;
+  color: #902784;
+  font-size: 0.9rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .left-items {
+    flex: 1.5;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        width: 80px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .right-items {
+    flex: 0.3;
+    display: flex;
+    width: 20px;
+    justify-content: space-evenly;
+    button {
+      font-size: 0.9rem;
+      background-color: #902784;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+  }
+}
+
+
+///////////////////////////////////////////////////////////////BONDS////////////////////////////////////////////////////////////
+
+.bond{
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top:  10rem;
+  padding: 1rem;
+  color: #fff;
+  background-image: linear-gradient(
+      to left bottom,
+      #d16ba5,
+      #c665b1,
+      #b662be,
+      #9f61cb,
+      #7e63d8,
+      #6775e8,
+      #4786f5,
+      #0095ff,
+      #0095ff,
+      #0095ff,
+      #0095ff
+    );
+   &__name{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+   } 
+
+   &__details{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    &--market{
+      font-size:  1.7rem;
+      font-weight: 100;
+      text-transform: capitalize;
+    }
+   }
+
+   &__bigbutton{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+
+    &--text{
+      padding: 8px;
+      border:  2px solid #0095ff;
+      text-transform: capitalize;
+      transition: all .2s;
+     
+
+      &:hover{
+        background-color: #0095ff;
+        border:  1px solid #fff;
+        padding: 9px;
+      }
+
+    }
+   }
+
+}
+
+.bonds{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  &__give{
+
+    &--image{
+      display: flex;
+    }
+
+    &--get{
+      display: flex;
+    }
+  }
+
+}
+
+.checks{
+  font-size: 0.9rem;
+  line-height: 0;
+
+  &__bond{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
+
+.link{
+  text-decoration: none;
+  &:active{
+    color:#fff
+  }
+}
+
+.close{
+  background-color: black;
+  padding: 7px;
+  border-radius: 50%;
+  border: none;
+}
