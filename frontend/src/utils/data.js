@@ -1,6 +1,7 @@
-const data = [
+const datas = [
   {
-    bondImage: "images/img/1.png",
+    bondImage: "images/dai.png",
+    bondImage2: "images/eth.jpeg.png",
     bondName: "ETH",
     payoutAssetImage: "images/eth.jpeg.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -9,7 +10,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/inv.png",
+    bondImage2: "images/dai.png",
     bondName: "DAI",
     payoutAssetImage: "images/dai.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -18,7 +20,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/eth.jpeg.png",
+    bondImage2: "images/dola.png",
     bondName: "USDT",
     payoutAssetImage: "images/dola.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -27,7 +30,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/eth.jpeg.png",
+    bondImage2: "images/usdc.png",
     bondName: "USDC",
     payoutAssetImage: "images/usdc.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -36,7 +40,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/eth.jpeg.png",
+    bondImage2: "images/fox.png",
     bondName: "WETH",
     payoutAssetImage: "images/eth.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -45,7 +50,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/eth.jpeg.png",
+    bondImage2: "images/inv.png",
     bondName: "RAIDER-ETH SLP",
     payoutAssetImage: "images/inv.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -54,7 +60,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/fox.png",
+    bondImage2: "images/iq.png",
     bondName: "RAIDER-ETH SLP",
     payoutAssetImage: "images/iq.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -63,8 +70,9 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
-    bondName: "RAIDER-ETH SLP",
+    bondImage: "images/eth.jpeg.png",
+    bondImage2: "images/fox.png",
+    bondName: "FOX",
     payoutAssetImage: "images/fox.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
@@ -72,7 +80,8 @@ const data = [
     action: "Bond",
   },
   {
-    bondImage: "#",
+    bondImage: "images/fox.png",
+    bondImage2: "images/dai.png",
     bondName: "RAIDER-ETH SLP",
     payoutAssetImage: "images/dai.png",
     payoutAssetTokenPrice: "$0.0346",
@@ -81,5 +90,5 @@ const data = [
     action: "Bond",
   },
 ];
-export default data;
+export default datas;
 //https://images.app.goo.gl/xyjpnGnVCZgbQpcFA
