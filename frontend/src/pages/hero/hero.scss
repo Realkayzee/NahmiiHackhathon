@@ -4,6 +4,7 @@
   .head-section {
     width: 500px;
     text-align: center;
+    color: rgb(108, 99, 99);
     margin: auto;
     padding: 20px;
     .nahmii-logo {
@@ -18,7 +19,10 @@
   .card {
     width: 70%;
     margin: auto;
+    margin-bottom: 40px;
+
     color: white;
+    font-size: 0.9rem;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     //gradient background
@@ -41,8 +45,8 @@
       ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
-        grid-auto-rows: minmax(15px, auto);
+        gap: 3px;
+        grid-auto-rows: minmax(10px, auto);
         padding: 30px 100px 20px 100px;
         li {
           list-style: none;
@@ -57,12 +61,69 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         color: white;
         text-decoration-style: none;
-        
+      }
+    }
+  }
+
+  .bottom-section {
+    //gradient background
+    background-image: linear-gradient(
+      to left top,
+      #d16ba5,
+      #c665b1,
+      #b662be,
+      #9f61cb,
+      #7e63d8,
+      #6775e8,
+      #4786f5,
+      #0095ff,
+      #0095ff,
+      #0095ff,
+      #0095ff
+    );
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 70%;
+    margin: auto;
+
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+      width: 90%;
+      flex: 0.25;
+      font-size: 13px;
+      h4 {
+        font-size: larger;
+      }
+    }
+    .docs-btn {
+      background: none;
+      margin-top: 50px;
+      color: white;
+      padding: 5px 50px;
+      border: 2px solid white;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: white;
+        margin-top: 50px;
+        color: #0095ff;
+        padding: 5px 50px;
+        border: 2px solid white;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
 }
-.card-list-item{
-  font-size: 17px;
+.card-list-item {
+  font-size: 16px;
   font-weight: bolder;
 }
