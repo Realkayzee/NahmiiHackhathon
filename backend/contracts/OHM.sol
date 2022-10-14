@@ -1293,7 +1293,7 @@ contract TWAPOracleUpdater is ERC20Permit, VaultOwned {
     }
   }
 
-  function _beforeTokenTransfer( address from_, address to_, uint256 amount_ ) internal override virtual {
+  function _beforeTokenTransfer( address from_, address to_) internal{
       if( _dexPoolsTWAPSources.contains( from_ ) ) {
         _uodateTWAPOracle( from_, twapEpochPeriod );
       } else {
@@ -1313,11 +1313,11 @@ contract Divine is TWAPOracleUpdater {
   }
 }
 
-contract OlympusERC20Token is Divine {
+contract NahmiiERC20Token is Divine {
 
   using SafeMath for uint256;
 
-    constructor() Divine("Olympus", "OHM", 9) {
+    constructor() Divine("NahmiiToken", "NII", 18) {
     }
 
     function mint(address account_, uint256 amount_) external onlyVault() {

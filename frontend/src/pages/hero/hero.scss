@@ -127,3 +127,11 @@
   font-size: 16px;
   font-weight: bolder;
 }
+.bondlist {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  grid-auto-rows: minmax(10px, auto);
+  list-style-type: none;
+  padding: 30px 100px 20px 100px;
+}
