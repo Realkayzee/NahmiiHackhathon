@@ -14,6 +14,8 @@ const Button = () => {
               border: "none",
               padding: "10px 25px",
               borderRadius: "5px",
+              fontWeight: "bold",
+              cursor: "pointer",
             }}
           >
             {isConnected ? ensName ?? truncatedAddress : "Connect Wallet"}

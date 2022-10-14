@@ -21,9 +21,7 @@ const Nav = ({ ConnectKitButton }) => {
         {/* for top right nav items */}
         <div className="right-items">
           <button className="btn">Learn</button>
-          {/* <button>Connect</button> */}
           <Button />
-          {/* <ConnectKitButton /> */}
         </div>
       </div>
       <Outlet />
