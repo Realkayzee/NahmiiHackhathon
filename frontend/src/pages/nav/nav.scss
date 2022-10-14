@@ -49,7 +49,7 @@
 ///////////////////////////////////////////////////////////////BONDS////////////////////////////////////////////////////////////
 
 .bond {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppin", sans-serif;
   width: 35%;
   margin: 0 auto;
   border-radius: 10px;
@@ -57,20 +57,7 @@
   margin-bottom: 2rem;
   padding: 1rem;
   color: #fff;
-  background-image: linear-gradient(
-    to left bottom,
-    #d16ba5,
-    #c665b1,
-    #b662be,
-    #9f61cb,
-    #7e63d8,
-    #6775e8,
-    #4786f5,
-    #0095ff,
-    #0095ff,
-    #0095ff,
-    #0095ff
-  );
+  background-image: linear-gradient(180deg,rgba(212,57,137,.9),rgba(0,163,222,.9));
   &__name {
     text-align: center;
     text-transform: uppercase;
@@ -118,6 +105,8 @@
   &__give {
     &--image {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &--get {
@@ -153,4 +142,9 @@
   font-weight: 500;
   padding: 0;
   border: none;
+}
+
+.icon{
+  height: 20px;
+  width: 20px;
 }

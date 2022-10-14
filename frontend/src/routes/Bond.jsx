@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
 import { IoIosArrowRoundBack } from "react-icons/io";
+// import Footer from "../pages/hero/Footer";
 
 export default function Bond() {
   const navigate = useNavigate();
@@ -58,8 +59,7 @@ export default function Bond() {
             <div className="bonds__give">
               <div className="bonds__give bonds__give--image">
                 {/* images are suppose to be here */}
-                <p className="bonds__give bonds__give--images">#</p>
-                <p className="bonds__give bonds__give--images">#</p>
+                <img className="icon" src="../images/dai.png" alt=""/>
               </div>
               <div className="bonds__give bonds__give--name">
                 <p className="bonds__give bonds__give--title">you give</p>
