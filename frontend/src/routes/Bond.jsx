@@ -4,7 +4,8 @@ import Data from "../utils/terms";
 import { useNavigate, useParams } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import {IoIosArrowRoundBack} from "react-icons/io";
+import { WiTime2 } from "react-icons/wi";
 
 export default function Bond() {
   const navigate = useNavigate();
@@ -13,16 +14,22 @@ export default function Bond() {
   let BondName;
   let BondPrice;
   let MarketPrice;
+  let bondimage1;
+  let bondimage2;
+  console.log(bondimage2,bondimage1);
   for (let i = 0; i < Data.length; i++) {
-    if (i === num) {
+    if (i == num) {
       BondName = Data[i].bondname;
       BondPrice = Data[i].bondprice;
       MarketPrice = Data[i].marketprice;
+      bondimage1 = Data[i].bondImage;
+      bondimage2 = Data[i].bondImage2;
+      console.log( Data[i].bondImage2,Data[i].bondprice);
       break;
     }
   }
-
-  console.log(BondName, BondPrice, MarketPrice);
+ console.log(Data);
+ console.log(bondimage2,bondimage1,"bond name", BondName);
 
   return (
     <Zoom delay={-500}>
@@ -53,10 +60,8 @@ export default function Bond() {
         </div>
         <div className="bonds">
           <div className="bonds__give">
-            <div className="bonds__give bonds__give--image">
-              {/* images are suppose to be here */}
-              <p className="bonds__give bonds__give--images">#</p>
-              <p className="bonds__give bonds__give--images">#</p>
+            <div className="bonds__give bonds__give--image flex_icons">
+               <img className="icons" src={`${bondimage1}`} alt={"token"}/> <img className="icon2" src={`${bondimage2}`} alt={"token"}/>
             </div>
             <div className="bonds__give bonds__give--name">
               <p className="bonds__give bonds__give--title">you give</p>
@@ -65,7 +70,7 @@ export default function Bond() {
           <div className="bonds__give">
             <div className="bonds__give bonds__give--time">
               {/* images are suppose to be here */}
-              <p className="bonds__give bonds__give--times">#</p>
+            <WiTime2 size={30}/>
             </div>
             <div className="bonds__give bonds__give--name">
               <p className="bonds__give bonds__give--title">
@@ -76,7 +81,7 @@ export default function Bond() {
           <div className="bonds__give">
             <div className="bonds__give bonds__give--get">
               {/* images are suppose to be here */}
-              <p className="bonds__give bonds__give--getimage">#</p>
+              <p className="bonds__give bonds__give--getimage">{}</p>
               <p className="bonds__give bonds__give--gets">5.8%</p>
             </div>
             <div className="bonds__give bonds__give--name">
