@@ -1,8 +1,7 @@
-
 .body {
   padding: 30px 20px;
   min-height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #f7f6f6;
   .head-section {
     width: 500px;
     text-align: center;
@@ -19,7 +18,7 @@
     }
   }
   .card {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-bottom: 40px;
 
@@ -38,9 +37,9 @@
       ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 3px;
-        grid-auto-rows: minmax(10px, auto);
-        padding: 30px 100px 20px 100px;
+        gap: 5px;
+        grid-auto-rows: minmax(35px, auto);
+        padding: 20px 50px 20px 50px;
         li {
           list-style: none;
         }
@@ -68,10 +67,10 @@
     color: black;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 70%;
+    width: 80%;
     margin: auto;
 
-    padding: 15px 0;
+    padding: 45px 0 20px 0;
     display: flex;
     justify-content: space-evenly;
     div {
@@ -85,7 +84,7 @@
     .docs-btn {
       background: none;
       margin-top: 50px;
-      color: white;
+      color: #4c38a2;
       padding: 5px 50px;
       border: 2px solid white;
       border-radius: 3px;
@@ -120,13 +119,13 @@
   padding: 30px 100px 20px 100px;
 }
 
-.icons{
+.icons {
   height: 25px;
   width: 25px;
   margin-right: 15px;
 }
 
-.icon2{
+.icon2 {
   height: 25px;
   width: 25px;
   margin-left: -25px;
