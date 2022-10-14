@@ -1,13 +1,11 @@
 import { Fragment } from "react";
+// import img from "../../images/img";
 import data from "../../utils/data";
 import Nahmii from "../../images/nahmii-logo.svg";
 import { Outlet, Link } from "react-router-dom";
 
 import "./hero.scss";
-
-
 import BondHeader from "./BondHeader";
-
 const Hero = () => {
   return (
     <Fragment>
@@ -27,8 +25,8 @@ const Hero = () => {
               data.map((items, index) => {
                 return (
                   <ul key={index}>
-                    <li className="flex_icons"><img className="icons" src={`${items.bondImage}`}/> <img className="icon2" src={`${items.bondImage2}`}/>- ${items.bondName}`</li>
-                    <li className="flex_icons"><img className="icons" src={`${items.payoutAssetImage}`}/> <span>{` - ${items.payoutAssetTokenPrice}`}</span></li>
+                    <li>{`${items.bondImage} - ${items.bondName}`}</li>
+                    <li>{`${items.payoutAssetImage} - ${items.payoutAssetTokenPrice}`}</li>
                     <li>{items.discount}</li>
                     <li>{items.tbv}</li>
                     <Link to={`bond/${index}`} className="link">
