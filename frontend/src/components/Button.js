@@ -3,7 +3,7 @@ import { ConnectKitButton } from "connectkit";
 const Button = () => {
   return (
     <ConnectKitButton.Custom>
-      {({ isConnected, isConnecting, show, hide, address, ensName }) => {
+      {({ isConnected, show, truncatedAddress, ensName }) => {
         return (
           <button
             onClick={show}
@@ -16,7 +16,7 @@ const Button = () => {
               borderRadius: "5px",
             }}
           >
-            {isConnected ? address : "Custom Connect"}
+            {isConnected ? ensName ?? truncatedAddress : "Connect Wallet"}
           </button>
         );
       }}
