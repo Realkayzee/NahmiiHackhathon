@@ -70,5 +70,4 @@ contract OlympusProFactory is Ownable {
             _payoutToken, _principleToken, _customTreasury, address(bond), _initialOwner, _tierCeilings, _fees
         );
     }
-    
 }
