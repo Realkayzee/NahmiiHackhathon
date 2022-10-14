@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-* {
-  font-family: "Inter", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&display=swap");
+
 .nav-items {
   display: flex;
   height: 50px;
@@ -10,6 +9,7 @@
   color: #902784;
   font-size: 0.9rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-family: "Raleway", sans-serif;
 
   .left-items {
     flex: 1.5;
@@ -19,6 +19,10 @@
       li {
         width: 80px;
         font-weight: bold;
+
+        &:hover {
+          color: #0095ff;
+        }
       }
     }
   }
@@ -39,110 +43,111 @@
   }
 }
 
-
 ///////////////////////////////////////////////////////////////BONDS////////////////////////////////////////////////////////////
 
-.bond{
+.bond {
+  font-family: "Lato", sans-serif;
   width: 35%;
   margin: 0 auto;
   border-radius: 10px;
-  margin-top:  10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   color: #fff;
   background-image: linear-gradient(
-      to left bottom,
-      #d16ba5,
-      #c665b1,
-      #b662be,
-      #9f61cb,
-      #7e63d8,
-      #6775e8,
-      #4786f5,
-      #0095ff,
-      #0095ff,
-      #0095ff,
-      #0095ff
-    );
-   &__name{
+    to left bottom,
+    #d16ba5,
+    #c665b1,
+    #b662be,
+    #9f61cb,
+    #7e63d8,
+    #6775e8,
+    #4786f5,
+    #0095ff,
+    #0095ff,
+    #0095ff,
+    #0095ff
+  );
+  &__name {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.5rem;
-   } 
+    font-size: 1.3rem;
+  }
 
-   &__details{
+  &__details {
     display: flex;
     justify-content: space-around;
     text-align: center;
 
-    &--market{
-      font-size:  1.7rem;
+    &--market {
+      font-size: 1.7rem;
       font-weight: 100;
       text-transform: capitalize;
     }
-   }
+  }
 
-   &__bigbutton{
+  &__bigbutton {
     display: block;
     text-align: center;
     border-radius: 5px;
 
-    &--text{
+    &--text {
       padding: 8px;
-      border:  2px solid #0095ff;
+      border: 2px solid #0095ff;
       text-transform: capitalize;
-      transition: all .2s;
-     
+      transition: all 0.2s;
 
-      &:hover{
-        background-color: #0095ff;
-        border:  1px solid #fff;
-        padding: 9px;
+      &:hover {
+        background-color: #fff;
+        border: 2px solid #fff;
+        color: #0095ff;
+        padding: 8px;
       }
-
     }
-   }
-
+  }
 }
 
-.bonds{
+.bonds {
   display: flex;
   justify-content: space-around;
   text-align: center;
 
-  &__give{
-
-    &--image{
+  &__give {
+    &--image {
       display: flex;
     }
 
-    &--get{
+    &--get {
       display: flex;
     }
   }
-
 }
 
-.checks{
+.checks {
   font-size: 0.9rem;
   line-height: 0;
 
-  &__bond{
+  &__bond {
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
   }
 }
 
-.link{
+.link {
   text-decoration: none;
-  &:active{
-    color:#fff
+  &:active {
+    color: #fff;
   }
 }
 
-.close{
-  background-color: black;
+.close {
   padding: 7px;
-  border-radius: 50%;
+  // border-radius: 100%;
+  background: none;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 0;
   border: none;
 }
