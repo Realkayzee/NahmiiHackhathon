@@ -28,14 +28,24 @@ const Hero = () => {
                 data.map((items, index) => {
                   return (
                     <ul key={index}>
-                      <li className="flex_icons"><img className="icons" src={`${items.bondImage}`}/> <img className="icon2" src={`${items.bondImage2}`}/>- ${items.bondName}`</li>
-                      <li className="flex_icons"><img className="icons" src={`${items.payoutAssetImage}`}/> <span>{` - ${items.payoutAssetTokenPrice}`}</span></li>
+                      <li className="flex_icons">
+                        <img className="icons" src={`${items.bondImage}`} />{" "}
+                        <img className="icon2" src={`${items.bondImage2}`} />- $
+                        {items.bondName}`
+                      </li>
+                      <li className="flex_icons">
+                        <img
+                          className="icons"
+                          src={`${items.payoutAssetImage}`}
+                        />{" "}
+                        <span>{` - ${items.payoutAssetTokenPrice}`}</span>
+                      </li>
                       <li>{items.discount}</li>
                       <li>{items.tbv}</li>
                       <Link to={`bond/${index}`} className="link">
                         <li className="bond-action">{items.action}</li>
                       </Link>
-                  </ul>
+                    </ul>
                   );
                 })}
             </div>
@@ -114,7 +124,7 @@ const Hero = () => {
                 })}
             </div> */}
           </div>
-  
+
           <div className="bottom-section">
             <div className="exchange-div">
               <div className="text-section">
@@ -126,28 +136,28 @@ const Hero = () => {
               </div>
               <div className="img-section"></div>
             </div>
-  
+
             <div className="linear-div">
               <div className="text-section">
                 <h4>Linear Vesting</h4>
                 <p>
-                  Once you receive a Bond, you are able to vest at any time within
-                  the vesting period
+                  Once you receive a Bond, you are able to vest at any time
+                  within the vesting period
                 </p>
               </div>
               <div className="img-section"></div>
-  
+
               <div className="docs">
                 <button className="docs-btn">Read the Docs</button>
               </div>
             </div>
-  
+
             <div className="market-div">
               <div className="text-section">
                 <h4>Below-market-rate discount</h4>
                 <p>
-                  To receive a below market rate swap, find your desired Bond with
-                  a positive discount rate.
+                  To receive a below market rate swap, find your desired Bond
+                  with a positive discount rate.
                 </p>
               </div>
               <div className="img-section"></div>
