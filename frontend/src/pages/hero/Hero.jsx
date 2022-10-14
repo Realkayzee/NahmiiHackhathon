@@ -4,16 +4,10 @@ import Nahmii from "../../images/nahmii-logo.svg";
 import { Outlet, Link } from "react-router-dom";
 
 import "./hero.scss";
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-import BondHeader from "./BondHeader";
->>>>>>> 4694e0bb5878dc55463ab8b06923bfdb5a57f09a
-=======
+
 import BondHeader from "./BondHeader";
 
->>>>>>> 3268cf4 (updated icons)
 const Hero = () => {
   return (
     <Fragment>
