@@ -1,8 +1,8 @@
 const data = [
   {
-    bondImage: "#",
-    bondName: "NV-DOLA SLP",
-    payoutAssetImage: "#",
+    bondImage: "images/img/1.png",
+    bondName: "ETH",
+    payoutAssetImage: "images/eth.jpeg.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -10,8 +10,8 @@ const data = [
   },
   {
     bondImage: "#",
-    bondName: "RAIDER-ETH SLP",
-    payoutAssetImage: "#",
+    bondName: "DAI",
+    payoutAssetImage: "images/dai.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -20,7 +20,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "USDT",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/dola.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -29,7 +29,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "USDC",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/usdc.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -38,7 +38,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "WETH",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/eth.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -47,7 +47,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "RAIDER-ETH SLP",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/inv.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -56,7 +56,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "RAIDER-ETH SLP",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/iq.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -65,7 +65,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "RAIDER-ETH SLP",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/fox.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",
@@ -74,7 +74,7 @@ const data = [
   {
     bondImage: "#",
     bondName: "RAIDER-ETH SLP",
-    payoutAssetImage: "#",
+    payoutAssetImage: "images/dai.png",
     payoutAssetTokenPrice: "$0.0346",
     discount: "-3.65%",
     tbv: "$60,000",

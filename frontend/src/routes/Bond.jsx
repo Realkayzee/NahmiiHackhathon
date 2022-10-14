@@ -4,7 +4,8 @@ import Data from "../utils/terms";
 import { useNavigate, useParams } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import {IoIosArrowRoundBack} from "react-icons/io";
+import { WiTime2 } from "react-icons/wi";
 
 export default function Bond() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function Bond() {
   let BondPrice;
   let MarketPrice;
   for (let i = 0; i < Data.length; i++) {
-    if (i === num) {
+    if (i == num) {
       BondName = Data[i].bondname;
       BondPrice = Data[i].bondprice;
       MarketPrice = Data[i].marketprice;
@@ -22,7 +23,6 @@ export default function Bond() {
     }
   }
 
-  console.log(BondName, BondPrice, MarketPrice);
 
   return (
     <Zoom delay={-500}>
@@ -65,7 +65,7 @@ export default function Bond() {
           <div className="bonds__give">
             <div className="bonds__give bonds__give--time">
               {/* images are suppose to be here */}
-              <p className="bonds__give bonds__give--times">#</p>
+            <WiTime2 size={30}/>
             </div>
             <div className="bonds__give bonds__give--name">
               <p className="bonds__give bonds__give--title">
@@ -76,7 +76,7 @@ export default function Bond() {
           <div className="bonds__give">
             <div className="bonds__give bonds__give--get">
               {/* images are suppose to be here */}
-              <p className="bonds__give bonds__give--getimage">#</p>
+              <p className="bonds__give bonds__give--getimage">{}</p>
               <p className="bonds__give bonds__give--gets">5.8%</p>
             </div>
             <div className="bonds__give bonds__give--name">
