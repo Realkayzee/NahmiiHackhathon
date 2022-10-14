@@ -5,6 +5,8 @@ import { Outlet, Link } from "react-router-dom";
 
 import "./hero.scss";
 
+import BondHeader from "./BondHeader";
+
 const Hero = () => {
   return (
     <Fragment>
@@ -18,14 +20,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="card">
+          <BondHeader />
           <div className="card-details">
-            <ul>
-              <li className="card-list-item">Bonds</li>
-              <li className="card-list-item">Payout Asset</li>
-              <li className="card-list-item">Discount</li>
-              <li className="card-list-item">TBV</li>
-              <li className="card-list-item"></li>
-            </ul>
             {data &&
               data.map((items, index) => {
                 return (
