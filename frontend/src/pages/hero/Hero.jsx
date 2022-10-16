@@ -4,6 +4,7 @@ import data from "../../utils/data";
 import Nahmii from "../../images/nahmii-logo.svg";
 import { Outlet, Link } from "react-router-dom";
 import { useAccount, useConnect } from "wagmi";
+import Footer from "./Footer";
 
 import "./hero.scss";
 import BondHeader from "./BondHeader";
@@ -28,8 +29,8 @@ const Hero = () => {
                 data.map((items, index) => {
                   return (
                     <ul key={index}>
-                      <li className="flex_icons"><img className="icons" src={`${items.bondImage}`}/> <img className="icon2" src={`${items.bondImage2}`}/>- ${items.bondName}`</li>
-                      <li className="flex_icons"><img className="icons" src={`${items.payoutAssetImage}`}/> <span>{` - ${items.payoutAssetTokenPrice}`}</span></li>
+                      <li className="flex_icons"><img className="icons" src={`${items.bondImage}`} alt="img"/> <img className="icon2" src={`${items.bondImage2}`} alt="img"/>- ${items.bondName}`</li>
+                      <li className="flex_icons"><img className="icons" src={`${items.payoutAssetImage}`} alt="img"/> <span>{` - ${items.payoutAssetTokenPrice}`}</span></li>
                       <li>{items.discount}</li>
                       <li>{items.tbv}</li>
                       <Link to={`bond/${index}`} className="link">
